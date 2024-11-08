@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIME GAMI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!-- continer1 -->
+
+        <div class="container">
+            <div class="navbar">
+                <img src="images/homebg1.jpg" class="hombg" alt="">
+                <nav>
+                    <ul class="logo">
+                        <h1 style="color: #ed9f6d;">NIME</h1>
+                        <h1>GAMI</h1>
+                    </ul>
+                    <ul>
+                        <a href="#" class="Home">Home</a>
+                        <a href="#">Anime List</a>
+                        <a href="#">Manga</a>
+                        <a href="#">Community</a>
+                    </ul>
+                </nav>
+            </div>
+            <div class="homesection">
+                <div class="homeboximage">
+                    <img src="images/imgjjk3.png" alt="">
+
+                </div>
+                <div class="homeboxinfo">
+
+                    <h1>STREAMING ANIME DENGAN
+                        QUALITAS TINGGI HANYA
+                        DI <span>NIME </span>GAMI.
+                    </h1>
+                    <div><button class="stremmingbtn">Daily Streaming</button></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- continer2 -->
+
+    <div class="container2">
+        <div class="mainbox">
+            <h1 style="margin: 5vh;"><span style="color: #fff;">A n i m e </span> L i s t</h1>
+
+        </div>
+
+        <img src="images/contater2.jpg" class="hombg" alt="">
+        <!-- card items -->
+        <div class="carditem">
+            <!-- card1 -->
+
+            <div class="card">
+                <h1>Haikyuu</h1>
+                <span>
+                    <p>Haikyu!!: Created by Haruichi Furudate. With Ayumu Murase, Kaito Ishikawa, Yu Hayashi, Satoshi
+                        Hino. </p>
+                    <button class="saveicon">
+                        <ion-icon name="bookmark-outline"></ion-icon>
+                    </button>
+                </span>
+            </div>
+            <!-- card2 -->
+
+            <div class="card">
+                <h1>Demon slayer</h1>
+                <span>
+                    <p>Demon Slayer: Kimetsu no Yaiba: With Natsuki Hanae, Zach Aguilar, Abby Trott, Akari Kitô. A
+                        family is attacked by demons. </p>
+                    <button class="saveicon">
+                        <ion-icon name="bookmark-outline"></ion-icon>
+                    </button>
+                </span>
+            </div>
+            <!-- card3 -->
+
+            <div class="card">
+                <h1>spy x family</h1>
+                <span>
+                    <p>A spy known only as Twilight needs a family as part of his undercover mission, so he quickly
+                        marries a city hall worker and adopts a child and dog. </p>
+                    <button class="saveicon">
+                        <ion-icon name="bookmark-outline"></ion-icon>
+                    </button>
+                </span>
+            </div>
+            <!-- card4 -->
+
+            <div class="card">
+                <h1>Madara Uchiha</h1>
+                <span>
+                    <p>Madara's power being compared to that of a god. Madara was one of the most powerful shinobi in
+                        history. </p>
+                    <button class="saveicon">
+                        <ion-icon name="bookmark-outline"></ion-icon>
+                    </button>
+                </span>
+            </div>
+            <!-- card5 -->
+
+            <div class="card">
+                <h1>Ryomen Sukuna</h1>
+                <span>
+                    <p>Master Hand-to-Hand Combatant: While immensely powerful as a jujutsu sorcerer, Sukuna is also
+                        shown to be an extremely skilled </p>
+                    <button class="saveicon">
+                        <ion-icon name="bookmark-outline"></ion-icon>
+                    </button>
+                </span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- continer3 -->
+
+    <div class="container3">
+        <img src="images/contater2.jpg" class="hombg" alt="">
+        <div class="animelists">
+            <!-- animelist itmes 1 -->
+            <div class="listitems">
+                <div class="anime_info">
+                    <div class="blureffet"></div>
+                    <span>
+                        <h1>Jujutsu kaisen </h1>
+                        <h4> | 48 episodes </h4>
+                    </span>
+                    <p>A boy swallows a cursed talismanthe finger of a demon and becomes cursed himself. He enters a
+                        shaman's school to be able to locate the demon's other body parts and thus exorcise himself.</p>
+                    <button class="watchnowbtn">Watch Now</button>
+                    <div class="ratebox">8.5</div>
+                </div>
+
+
+                <div class="mainbox2"><img src="images/imgjjk3.png" alt=""></div>
+            </div>
+            <!-- animelist itmes 2 -->
+           
+        </div>
+
+
+
+
+<div class="nav">
+        <button onclick="goprev()"><ion-icon name="arrow-back-outline"></ion-icon></button>
+        <button onclick="gonext()"><ion-icon name="arrow-forward-outline"></ion-icon></button>
+    </div>
+
+    </div>
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        let mouseDown = false;
+        let startX, scrollLeft;
+        const slider = document.querySelector('.carditem');
+
+        const startDragging = (e) => {
+            mouseDown = true;
+            startX = e.pageX - slider.offsetLeft;
+            scrollLeft = slider.scrollLeft;
+        }
+
+        const stopDragging = (e) => {
+            mouseDown = false;
+        }
+
+        const move = (e) => {
+            e.preventDefault();
+            if (!mouseDown) { return; }
+            const x = e.pageX - slider.offsetLeft;
+            const scroll = x - startX;
+            slider.scrollLeft = scrollLeft - scroll;
+        }
+
+        // Add the event listeners
+        slider.addEventListener('mousemove', move, false);
+        slider.addEventListener('mousedown', startDragging, false);
+        slider.addEventListener('mouseup', stopDragging, false);
+        slider.addEventListener('mouseleave', stopDragging, false);
+    </script>
+    
+</body>
+
+</html>

@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* container1 */
+
+.container {
+
+    margin: 5vh;
+    width: 95vw;
+    height: 90vh;
+    padding: 3vh;
+    overflow: hidden;
+}
+
+.navbar nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar nav .logo {
+    z-index: 90;
+    border: none;
+    background-color: transparent;
+}
+
+.navbar nav ul a {
+    text-decoration: none;
+    color: black;
+    margin-right: 7vw;
+    z-index: 99;
+
+}
+
+.navbar nav ul a:hover {
+    color: #ef8d48;
+    text-decoration: underline;
+    text-underline-offset: .3vw;
+}
+
+.navbar nav ul .Home {
+    color: #ef8d48;
+    text-decoration: underline;
+    text-underline-offset: .3vw;
+
+}
+
+.homesection {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.hombg {
+    width: 95vw;
+    height: 90vh;
+    margin: -3vh;
+    opacity: .15;
+    z-index: -99;
+    position: absolute;
+
+
+
+}
+
+.homesection .homeboximage img {
+    width: 45vw;
+    filter: drop-shadow(-100px 8px 150px #53504f);
+    margin-top: -12vh;
+
+
+
+}
+
+
+.homesection .homeboxinfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    letter-spacing: .1vh;
+    width: 29.5vw;
+    text-align: left;
+
+}
+
+.homesection .homeboxinfo div {
+    width: 100%;
+}
+
+
+.homesection .homeboxinfo div .stremmingbtn {
+    border-radius: 5vh;
+    border: none;
+    font-size: 2vh;
+    font-weight: 600;
+    color: #fff;
+    background-color: #ef8d48;
+    margin-top: 2vh;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 1vh 2vh;
+}
+
+.homesection .homeboxinfo h1 span {
+    color: #ed9f6d;
+}
+
+/* container2 */
+
+.container2 {
+
+    margin: 5vh;
+    width: 95vw;
+    height: 90vh;
+    padding: 4vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+
+    overflow: hidden;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+.container2 .arowbtn {
+    color: #ffff;
+    font-size: 5vh;
+    background-color: transparent;
+    border: none;
+    margin: 10vh;
+}
+
+.container2 .mainbox {
+    width: 30vw;
+    background-color: #ef8d48;
+    height: 90vh;
+    position: absolute;
+    left: 5vh;
+    top: 101vh;
+    z-index: -10;
+    box-shadow: inset 38px -39px 103px -27px rgba(255, 255, 255, 0.73);
+}
+
+.container2 .carditem {
+
+    display: flex;
+    justify-content: space-around;
+    gap: 10vh;
+    overflow-x: hidden;
+    z-index: 10;
+
+
+
+
+}
+
+.container2 .carditem .card {
+    z-index: 10;
+    height: 55vh;
+    width: 20vw;
+    aspect-ratio: 1 / 1;
+    position: relative;
+    top: 15vh;
+    background-image: url(images/haukye.jpg);
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5vh;
+    display: grid;
+    padding: 2vh;
+    align-content: end;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+.container2 .carditem .card:nth-child(2) {
+    background-image: url(images/demonslyer.jpg);
+}
+
+.container2 .carditem .card:nth-child(3) {
+    background-image: url(images/spyxfamily.jpg);
+}
+
+.container2 .carditem .card:nth-child(4) {
+    background-image: url(images/madra.jpg);
+}
+
+.container2 .carditem .card:nth-child(5) {
+    background-image: url(images/sakuna.jpg);
+}
+
+.container2 .carditem .card h1 {
+    color: #ffff;
+
+}
+
+.container2 .carditem .card span p {
+    color: #ffff;
+    font-size: 1.4vh;
+    width: 15vw;
+
+}
+
+.container2 .carditem .card span {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.container2 .carditem .card span .saveicon {
+    color: #ffff;
+    font-size: 3vh;
+    background-color: transparent;
+    border: none;
+
+}
+
+/* container3 */
+.container3 {
+    margin: 5vh;
+    width: 95vw;
+    height: 90vh;
+    padding: 3vh;
+    overflow: hidden;
+    position: relative;
+    /* background-color: red; */
+}
+
+.mainbox2 {
+    height: 90vh;
+    width: 100vw;
+    background-color: #ef8d48;
+    box-shadow: inset 250px 1px 27px -3px rgba(0, 0, 0, 0.69);
+    float: right;
+    margin: -3vh;
+    position: relative;
+    z-index: -99;
+    clip-path: polygon(50.9% 0%, 100% 0%, 100% 100%, 25.1% 100.3%);
+    overflow: hidden;
+
+}
+
+.mainbox2 img {
+    width: 100vh;
+    height: 100vh;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.container3 .animelists{
+    position: relative;
+}
+.container3 .animelists .listitems{
+    position: absolute;
+    transition: 1s;
+
+}
+.container3 .animelists .listitems .anime_info {
+    
+    width: 30vw;
+    height: 30vh;
+    position: absolute;
+    padding: 2vh;
+    color: rgb(35, 35, 35);
+    backdrop-filter: blur(10px);
+    top: 30vh;
+    left: 30vh;
+    overflow: hidden;
+    border-radius: 5vh;
+}
+
+.blureffet {
+    width: 35vw;
+    height: 35vh;
+    
+    /* background-color: rebeccapurple; */
+    filter: blur(10px);
+    position: absolute;
+    top: -2;
+    left: -2;
+
+    z-index: -99;
+
+}
+
+.container3 .animelists .listitems .anime_info span {
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: baseline;
+    margin-bottom: 4vh;
+
+
+}
+
+.container3 .animelists .listitems .anime_info span h1 {
+    color: #ef8d48;
+}
+
+.container3 .animelists .listitems .anime_info p {
+    font-size: 2vh;
+    color: #53504f;
+    margin-bottom: 1vh;
+}
+
+.container3 .animelists .listitems .anime_info .watchnowbtn {
+    background-color: #ef8d48;
+    border: none;
+    border-radius: 5vh;
+    padding: 1vh 3vh;
+    font-size: 2vh;
+}
+.container3 .animelists .listitems .anime_info .ratebox{
+    float: right;
+   position: relative;
+   width: 5vh;
+   background-color: #f06400;
+   height: 5vh;
+   padding: 1vh;
+   border-radius: 50%;
+}
+.nav{
+    text-align: center;
+    position: relative;
+    
+}
+.nav button{
+    font-size: 25px;
+    position: absolute;
+   background-color: transparent;
+   width: 5vh;
+   border: none;
+   border-radius: 50%;
+   height: 5vh;
+   padding: .5vh;
+   cursor: pointer;
+   
+   
+}
+.nav button:nth-child(1){
+    font-size: 25px;
+    position: absolute;
+    top: 40vh;
+    left: 0;
+    /* color: gray; */
+
+    /* margin: 25px; */
+}
+.nav button:nth-child(2){
+    font-size: 25px;
+    position: absolute;
+    top: 40vh;
+    right: 0;
+    color: #fff;
+   
+
+    /* margin: 25px; */
+}
